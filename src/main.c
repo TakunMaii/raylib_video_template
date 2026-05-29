@@ -6,7 +6,7 @@
 #define W 1920
 #define H 1080
 #define FPS 60
-#define TOTAL_FRAMES (FPS * 5)
+#define TOTAL_FRAMES (FPS * 10)
 
 int main(void)
 {
@@ -42,7 +42,7 @@ int main(void)
                 (Vector2){ W/2 + 300*cosf(t*2), H/2 + 200*sinf(t*3) },
                 80, RED
             );
-            DrawText("Pipe Mode 🚀", 80, 80, 48, YELLOW);
+            DrawText("Pipe Mode", 80, 80, 48, YELLOW);
         EndTextureMode();
 
         // GPU → CPU
